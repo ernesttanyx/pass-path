@@ -4,8 +4,6 @@
 
 /* Tactiq — Granola/Organic Minimalist design system. All colors HSL. */
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap');
-
 @layer base {
   :root {
     /* Cream #F9F7F2 */
