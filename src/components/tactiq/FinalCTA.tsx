@@ -1,8 +1,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { useLang } from "@/contexts/LanguageContext";
 
 export const FinalCTA = () => {
   const [submitted, setSubmitted] = useState(false);
+  const { tr } = useLang();
 
   return (
     <section id="waitlist" className="relative py-28 px-6">
@@ -14,11 +16,10 @@ export const FinalCTA = () => {
         className="max-w-4xl mx-auto rounded-[32px] border border-dashed border-foreground/40 bg-sage/10 p-10 md:p-16 text-center"
       >
         <h2 className="font-serif text-4xl md:text-6xl text-foreground leading-tight">
-          Join the 40% Revolution.
+          {tr("ctaTitle")}
         </h2>
         <p className="mt-5 max-w-xl mx-auto text-foreground/70">
-          Stop fighting the whole syllabus. Get our "2026 High-Yield Chapter Report" and
-          start your path to a pass today. Only 500 spots available for the Beta.
+          {tr("ctaSub")}
         </p>
 
         <AnimatePresence mode="wait">
@@ -35,14 +36,14 @@ export const FinalCTA = () => {
               <input
                 type="email"
                 required
-                placeholder="your@email.com"
+                placeholder={tr("heroEmail")}
                 className="flex-1 bg-transparent border-b border-foreground/50 px-1 py-3 outline-none text-foreground placeholder:text-foreground/40 text-center sm:text-left"
               />
               <button
                 type="submit"
                 className="px-7 py-3.5 rounded-full bg-primary text-primary-foreground text-sm font-medium animate-ripple"
               >
-                Secure My Spot
+                {tr("ctaButton")}
               </button>
             </motion.form>
           ) : (
@@ -56,23 +57,23 @@ export const FinalCTA = () => {
                 <path d="M18 42 L34 58 L64 24" />
               </svg>
               <p className="font-serif text-2xl text-foreground">
-                Check your inbox. Your strategy has arrived.
+                {tr("ctaDone")}
               </p>
             </motion.div>
           )}
         </AnimatePresence>
 
         <p className="mt-8 text-xs text-foreground/50">
-          We don't spam. We just help you pass. No geniuses allowed.
+          {tr("ctaDisclaimer")}
         </p>
       </motion.div>
 
       <footer className="max-w-6xl mx-auto mt-20 pt-8 border-t border-border/60 flex flex-col md:flex-row items-center justify-between text-xs text-foreground/50 gap-3">
         <span className="font-serif text-lg text-foreground/80">Tactiq</span>
-        <span>© 2026 Tactiq. Built for Malaysian students.</span>
+        <span>{tr("ctaCopyright")}</span>
         <div className="flex gap-5">
-          <a href="#" className="hover:text-foreground transition">Privacy</a>
-          <a href="#" className="hover:text-foreground transition">Terms</a>
+          <a href="#" className="hover:text-foreground transition">{tr("ctaPrivacy")}</a>
+          <a href="#" className="hover:text-foreground transition">{tr("ctaTerms")}</a>
         </div>
       </footer>
     </section>
