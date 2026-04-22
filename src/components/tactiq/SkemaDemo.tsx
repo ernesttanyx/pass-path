@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useLang } from "@/contexts/LanguageContext";
 
 const WindowDots = () => (
   <div className="flex gap-1.5">
@@ -8,12 +9,14 @@ const WindowDots = () => (
   </div>
 );
 
-export const SkemaDemo = () => (
+export const SkemaDemo = () => {
+  const { tr } = useLang();
+  return (
   <section id="demo" className="relative py-28 px-6 bg-paper">
     <div className="max-w-6xl mx-auto">
       <h2 className="font-serif text-4xl md:text-6xl text-foreground leading-tight max-w-3xl">
-        Not Just an Answer. <br />
-        <span className="italic text-foreground/70">The Right Working.</span>
+        {tr("skemaTitle1")} <br />
+        <span className="italic text-foreground/70">{tr("skemaTitle2")}</span>
       </h2>
 
       <div className="mt-16 grid md:grid-cols-2 gap-6">
@@ -27,15 +30,15 @@ export const SkemaDemo = () => (
         >
           <div className="flex items-center justify-between px-5 py-3 border-b border-border/70">
             <WindowDots />
-            <span className="text-xs text-foreground/50">Generic ChatGPT</span>
+            <span className="text-xs text-foreground/50">{tr("skemaGeneric")}</span>
             <span />
           </div>
           <div className="p-6 font-mono text-[13px] text-foreground/70 leading-relaxed space-y-2">
-            <div>To differentiate y = x³ − 2x²,</div>
-            <div>we apply the power rule...</div>
+            <div>{tr("skemaG1")}</div>
+            <div>{tr("skemaG2")}</div>
             <div>dy/dx = 3x² − 4x</div>
-            <div>So when x = 2, the gradient is 4.</div>
-            <div className="text-foreground/40">(no working shown for Skema marks)</div>
+            <div>{tr("skemaG3")}</div>
+            <div className="text-foreground/40">{tr("skemaG4")}</div>
           </div>
         </motion.div>
 
@@ -53,7 +56,7 @@ export const SkemaDemo = () => (
         >
           <div className="flex items-center justify-between px-5 py-3 border-b border-border/70 bg-background/80">
             <WindowDots />
-            <span className="text-xs text-foreground/70">Tactiq Skema-Engine</span>
+            <span className="text-xs text-foreground/70">{tr("skemaEngine")}</span>
             <span />
           </div>
           <div className="p-6 font-serif text-lg text-foreground space-y-3">
@@ -62,22 +65,23 @@ export const SkemaDemo = () => (
             </div>
             <div className="flex items-center gap-3">
               <span>dy/dx = 3x² − 4x</span>
-              <SkemaTag label="K1" title="Knowledge: differentiation rule applied" />
+              <SkemaTag label="K1" title={tr("skemaTipK1a")} />
             </div>
             <div className="flex items-center gap-3">
               <span>= 3(2)² − 4(2)</span>
-              <SkemaTag label="K1" title="Must show substitution of x = 2 here to secure this mark." />
+              <SkemaTag label="K1" title={tr("skemaTipK1b")} />
             </div>
             <div className="flex items-center gap-3">
               <span>= 4</span>
-              <SkemaTag label="N1" title="Numerical: final answer" />
+              <SkemaTag label="N1" title={tr("skemaTipN1")} />
             </div>
           </div>
         </motion.div>
       </div>
     </div>
   </section>
-);
+  );
+};
 
 const SkemaTag = ({ label, title }: { label: string; title: string }) => (
   <span

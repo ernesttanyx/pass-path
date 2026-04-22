@@ -1,13 +1,14 @@
-import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import { motion, useInView, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useLang } from "@/contexts/LanguageContext";
 
 const data = [
-  { name: "Index Numbers", pct: 95, note: "Appeared in 9/10 Paper 2s." },
-  { name: "Solution of Triangles", pct: 88, note: "High-yield Section C marks." },
-  { name: "Linear Law", pct: 85, note: "The easiest 10 marks in the paper." },
-  { name: "Coordinate Geometry", pct: 78, note: "Consistent Paper 2 appearance." },
-  { name: "Circular Measure", pct: 72, note: "Frequent Section B anchor." },
-];
+  { nameKey: "anCh1", pct: 95, noteKey: "anNote1" },
+  { nameKey: "anCh2", pct: 88, noteKey: "anNote2" },
+  { nameKey: "anCh3", pct: 85, noteKey: "anNote3" },
+  { nameKey: "anCh4", pct: 78, noteKey: "anNote4" },
+  { nameKey: "anCh5", pct: 72, noteKey: "anNote5" },
+] as const;
 
 const Counter = ({ to }: { to: number }) => {
   const ref = useRef<HTMLSpanElement>(null);
@@ -25,16 +26,17 @@ const Counter = ({ to }: { to: number }) => {
   return <span ref={ref}>{v}%</span>;
 };
 
-export const Analyzer = () => (
+export const Analyzer = () => {
+  const { tr } = useLang();
+  return (
   <section className="relative py-28 px-6">
     <div className="max-w-5xl mx-auto">
       <div className="text-center mb-16">
         <h2 className="font-serif text-4xl md:text-6xl text-foreground leading-tight">
-          Data, Not Guesswork.
+          {tr("analyzerTitle")}
         </h2>
         <p className="mt-5 text-foreground/70 max-w-2xl mx-auto">
-          We analyzed 10 years of SPM and Trial papers (MRSM, SBP, Selangor) to rank
-          chapters by their "Mark-to-Effort" ratio.
+          {tr("analyzerSub")}
         </p>
       </div>
 
@@ -42,7 +44,7 @@ export const Analyzer = () => (
         <div className="space-y-7">
           {data.map((d, i) => (
             <motion.div
-              key={d.name}
+              key={d.nameKey}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -50,7 +52,7 @@ export const Analyzer = () => (
               className="space-y-2"
             >
               <div className="flex items-baseline justify-between gap-4">
-                <span className="font-serif text-xl md:text-2xl text-foreground">{d.name}</span>
+                <span className="font-serif text-xl md:text-2xl text-foreground">{tr(d.nameKey)}</span>
                 <span className="font-serif text-xl text-foreground/80 tabular-nums">
                   <Counter to={d.pct} />
                 </span>
@@ -64,7 +66,7 @@ export const Analyzer = () => (
                   className="h-full bg-primary"
                 />
               </div>
-              <p className="text-xs text-foreground/50">{d.note}</p>
+              <p className="text-xs text-foreground/50">{tr(d.noteKey)}</p>
             </motion.div>
           ))}
         </div>
@@ -78,10 +80,11 @@ export const Analyzer = () => (
         >
           <span className="font-serif text-5xl text-foreground">42%</span>
           <span className="mt-2 text-xs uppercase tracking-wider text-foreground/60 leading-relaxed">
-            of marks come from just 5 chapters
+            {tr("anCircle")}
           </span>
         </motion.div>
       </div>
     </div>
   </section>
-);
+  );
+};

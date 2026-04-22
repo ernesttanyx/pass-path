@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useLang } from "@/contexts/LanguageContext";
 
 const logos = ["MRSM TRIALS", "SBP TRIALS", "SPM PAST YEARS", "KPM SYLLABUS", "SELANGOR TRIALS", "JOHOR TRIALS"];
 
-export const TrustBar = () => (
+export const TrustBar = () => {
+  const { tr } = useLang();
+  return (
   <motion.section
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
@@ -11,7 +14,7 @@ export const TrustBar = () => (
     className="py-20 px-6 overflow-hidden"
   >
     <p className="text-center text-[11px] uppercase tracking-[0.25em] text-foreground/50 mb-10">
-      Based on the Standards of
+      {tr("trustLabel")}
     </p>
     <div className="relative">
       <div className="flex gap-16 animate-marquee whitespace-nowrap w-max">
@@ -28,4 +31,5 @@ export const TrustBar = () => (
       <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background to-transparent" />
     </div>
   </motion.section>
-);
+  );
+};

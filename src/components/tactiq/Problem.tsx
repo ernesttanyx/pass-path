@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import { useLang } from "@/contexts/LanguageContext";
 
 const cards = [
   {
-    title: "The Marking Scheme Gap",
-    body: 'Knowing the math isn\'t enough. If your "Jalan Kerja" (working steps) doesn\'t match the specific SPM Skema, you lose points. Generic AI doesn\'t know the Skema. Tactiq does.',
+    titleKey: "problemC1Title",
+    bodyKey: "problemC1Body",
     icon: (
       <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" stroke="currentColor" strokeWidth="1">
         <rect x="14" y="10" width="30" height="40" rx="2" />
@@ -16,8 +17,8 @@ const cards = [
     ),
   },
   {
-    title: "The Cognitive Wall",
-    body: 'Traditional tuition dumps 400 pages of jargon on you. For a student at a 10% grade, that is noise. We filter the syllabus down to the "Essential 40%."',
+    titleKey: "problemC2Title",
+    bodyKey: "problemC2Body",
     icon: (
       <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" stroke="currentColor" strokeWidth="1">
         <rect x="12" y="40" width="40" height="10" />
@@ -30,8 +31,8 @@ const cards = [
     ),
   },
   {
-    title: "The Data Deficit",
-    body: "Students waste 80% of their time on low-yield chapters that barely appear in Paper 2. We use 10 years of trial data to tell you exactly where the marks are hidden.",
+    titleKey: "problemC3Title",
+    bodyKey: "problemC3Body",
     icon: (
       <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" stroke="currentColor" strokeWidth="1">
         <line x1="10" y1="54" x2="54" y2="54" />
@@ -42,24 +43,26 @@ const cards = [
       </svg>
     ),
   },
-];
+] as const;
 
-export const Problem = () => (
+export const Problem = () => {
+  const { tr } = useLang();
+  return (
   <section className="relative py-28 px-6">
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-20">
         <span className="inline-block text-xs uppercase tracking-[0.2em] px-4 py-1.5 rounded-full bg-sage/25 text-foreground">
-          The Problem
+          {tr("problemTag")}
         </span>
         <h2 className="mt-6 font-serif text-4xl md:text-6xl text-foreground leading-tight">
-          Why 50% of Students <br className="hidden md:block" /> Fail Add Maths.
+          {tr("problemTitle1")} <br className="hidden md:block" /> {tr("problemTitle2")}
         </h2>
       </div>
 
       <div className="grid md:grid-cols-3 gap-12 md:gap-0">
         {cards.map((c, i) => (
           <motion.div
-            key={c.title}
+            key={c.titleKey}
             initial={{ opacity: 0.3 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -70,11 +73,12 @@ export const Problem = () => (
               <div className="hidden md:block absolute left-0 top-8 bottom-8 w-px bg-gradient-to-b from-transparent via-foreground/20 to-transparent" />
             )}
             <div className="text-foreground mb-6 draw-on-view">{c.icon}</div>
-            <h3 className="font-serif text-2xl mb-4 text-foreground">{c.title}</h3>
-            <p className="text-foreground/70 leading-relaxed text-[15px]">{c.body}</p>
+            <h3 className="font-serif text-2xl mb-4 text-foreground">{tr(c.titleKey)}</h3>
+            <p className="text-foreground/70 leading-relaxed text-[15px]">{tr(c.bodyKey)}</p>
           </motion.div>
         ))}
       </div>
     </div>
   </section>
-);
+  );
+};
