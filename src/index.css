@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tactiq — Granola/Organic Minimalist design system. All colors HSL. */
+
+@layer base {
+  :root {
+    /* Cream #F9F7F2 */
+    --background: 42 33% 96%;
+    /* Deep Forest Green #3D5A42 */
+    --foreground: 131 19% 30%;
+
+    --card: 42 33% 96%;
+    --card-foreground: 131 19% 30%;
+
+    --popover: 42 33% 96%;
+    --popover-foreground: 131 19% 30%;
+
+    /* Primary = Deep Forest Green */
+    --primary: 131 19% 30%;
+    --primary-foreground: 42 33% 96%;
+
+    /* Secondary = Sage Green #A3B18A */
+    --secondary: 83 22% 62%;
+    --secondary-foreground: 131 19% 30%;
+
+    /* Muted paper tone #F2EFE9 */
+    --muted: 40 23% 93%;
+    --muted-foreground: 131 10% 40%;
+
+    /* Accent = Muted Gold #D4AF37 */
+    --accent: 46 65% 52%;
+    --accent-foreground: 131 19% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Grid color #E5E0D5 */
+    --border: 40 22% 87%;
+    --input: 40 22% 87%;
+    --ring: 131 19% 30%;
+
+    --sage: 83 22% 62%;
+    --gold: 46 65% 52%;
+    --paper: 40 23% 93%;
+    --grid: 40 22% 87%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-image:
+      repeating-linear-gradient(0deg, hsl(var(--grid) / 0.5) 0, hsl(var(--grid) / 0.5) 1px, transparent 1px, transparent 20px),
+      repeating-linear-gradient(90deg, hsl(var(--grid) / 0.5) 0, hsl(var(--grid) / 0.5) 1px, transparent 1px, transparent 20px);
+  }
+
+  .font-serif {
+    font-family: 'Instrument Serif', 'Times New Roman', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  .gold-underline {
+    position: relative;
+    display: inline-block;
+  }
+  .gold-underline::after {
+    content: '';
+    position: absolute;
+    left: -2%;
+    bottom: 0.05em;
+    width: 104%;
+    height: 0.35em;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'><path d='M2 8 Q 50 2 100 6 T 198 5' stroke='%23D4AF37' stroke-width='3' fill='none' stroke-linecap='round'/></svg>") no-repeat center / 100% 100%;
+    pointer-events: none;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee 30s linear infinite; }
+
+  @keyframes ripple-pulse {
+    0% { box-shadow: 0 0 0 0 hsl(var(--sage) / 0.6); }
+    70% { box-shadow: 0 0 0 14px hsl(var(--sage) / 0); }
+    100% { box-shadow: 0 0 0 0 hsl(var(--sage) / 0); }
+  }
+  .animate-ripple { animation: ripple-pulse 4s ease-out infinite; }
+
+  @keyframes draw {
+    to { stroke-dashoffset: 0; }
+  }
+  .draw-on-view path, .draw-on-view circle, .draw-on-view line, .draw-on-view rect, .draw-on-view polyline {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: draw 1.5s ease-out forwards;
+  }
+}
