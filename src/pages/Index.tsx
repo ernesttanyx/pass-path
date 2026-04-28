@@ -6,18 +6,21 @@ import { SkemaDemo } from "@/components/tactiq/SkemaDemo";
 import { Analyzer } from "@/components/tactiq/Analyzer";
 import { TrustBar } from "@/components/tactiq/TrustBar";
 import { FinalCTA } from "@/components/tactiq/FinalCTA";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const Index = () => (
-  <main className="min-h-screen bg-background text-foreground">
-    <Nav />
-    <Hero />
-    <Problem />
-    <Method />
-    <SkemaDemo />
-    <Analyzer />
-    <TrustBar />
-    <FinalCTA />
-  </main>
+  <LanguageProvider>
+    <main className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <Hero />
+      <Problem />
+      <Method />
+      <SkemaDemo />
+      <Analyzer />
+      <TrustBar />
+      <FinalCTA />
+    </main>
+  </LanguageProvider>
 );
 
 export default Index;
