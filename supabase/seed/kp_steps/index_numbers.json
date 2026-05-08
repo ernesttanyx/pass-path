@@ -1,0 +1,938 @@
+{
+  "kp_steps": [
+    {
+      "id": "10000001-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak 2 harga (lama & baru) → tekan (harga baru ÷ harga lama) × 100",
+      "step_description_en": "See 2 prices (old & new) → press (new ÷ old) × 100",
+      "mark_value": 1,
+      "frequency_score": 10,
+      "difficulty_1_to_5": 2,
+      "display_order": 1,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000002-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak indeks (I) & harga lama (P₀), tanya harga baru → tekan (I ÷ 100) × P₀",
+      "step_description_en": "See index (I) & old price (P₀), asked for new price → press (I ÷ 100) × P₀",
+      "mark_value": 1,
+      "frequency_score": 9,
+      "difficulty_1_to_5": 3,
+      "display_order": 2,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000003-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak indeks (I) & harga baru (P₁), tanya harga lama → tekan (P₁ ÷ I) × 100",
+      "step_description_en": "See index (I) & new price (P₁), asked for old price → press (P₁ ÷ I) × 100",
+      "mark_value": 1,
+      "frequency_score": 8,
+      "difficulty_1_to_5": 4,
+      "display_order": 3,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000004-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak jadual dengan lajur I dan lajur w → tekan: jumlah(I×w) ÷ jumlah(w)",
+      "step_description_en": "See table with column I and column w → press: sum(I×w) ÷ sum(w)",
+      "mark_value": 2,
+      "frequency_score": 10,
+      "difficulty_1_to_5": 3,
+      "display_order": 4,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000005-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak jadual ada 1 wajaran (w) kosong, indeks gubahan diberi → tekan: (Ī×Σw_tahu − Σ(I×w)_tahu) ÷ (I_kosong − Ī)",
+      "step_description_en": "See table with 1 missing weight, composite index given → press: (Ī×known_Σw − known_Σ(Iw)) ÷ (missing_I − Ī)",
+      "mark_value": 2,
+      "frequency_score": 7,
+      "difficulty_1_to_5": 4,
+      "display_order": 5,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000006-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak jadual ada 1 indeks (I) kosong, indeks gubahan diberi → tekan: (Ī×Σw − Σ(I×w)_tahu) ÷ w_kosong",
+      "step_description_en": "See table with 1 missing index, composite given → press: (Ī×total_w − known_Σ(Iw)) ÷ missing_w",
+      "mark_value": 2,
+      "frequency_score": 8,
+      "difficulty_1_to_5": 4,
+      "display_order": 6,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000007-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak 2 indeks berasingan (A→B dan B→C), tanya A→C → tekan: I₁ × I₂ ÷ 100",
+      "step_description_en": "See 2 separate indices (A→B and B→C), asked for A→C → press: I₁ × I₂ ÷ 100",
+      "mark_value": 2,
+      "frequency_score": 7,
+      "difficulty_1_to_5": 4,
+      "display_order": 7,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000008-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak indeks gubahan (Ī) & harga lama, tanya harga masa depan → tekan: (Ī ÷ 100) × harga lama",
+      "step_description_en": "See composite index (Ī) & old price, asked for future price → press: (Ī ÷ 100) × old price",
+      "mark_value": 1,
+      "frequency_score": 9,
+      "difficulty_1_to_5": 2,
+      "display_order": 8,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000009-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak 'harga naik/turun X%' dan soal 'nyatakan indeks' → tulis terus: naik = 100+X, turun = 100−X",
+      "step_description_en": "See 'price increased/decreased by X%' asked to 'state the index' → write directly: increase = 100+X, decrease = 100−X",
+      "mark_value": 1,
+      "frequency_score": 7,
+      "difficulty_1_to_5": 1,
+      "display_order": 9,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000010-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak indeks I dan 'harga asas lebih murah RM D daripada harga semasa' → tulis 2 persamaan, selesaikan untuk dapat harga asas x",
+      "step_description_en": "See index I and 'base price is RM D less than current price' → write 2 equations (index formula + price difference), solve for base price x",
+      "mark_value": 2,
+      "frequency_score": 8,
+      "difficulty_1_to_5": 4,
+      "display_order": 10,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000011-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak nisbah wajaran a:b:m:d, semua indeks diketahui, indeks gubahan diberi → ganti masuk, selesaikan untuk nilai m",
+      "step_description_en": "See ratio of weightages a:b:m:d, all indices known, composite index given → substitute all in, solve for integer m",
+      "mark_value": 2,
+      "frequency_score": 8,
+      "difficulty_1_to_5": 4,
+      "display_order": 11,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000012-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak indeks gubahan B/A, % kenaikan B→C, harga jual dan untung RM → rantai indeks ke belakang untuk dapat kos tahun asas",
+      "step_description_en": "See composite index B/A, % increase B→C, selling price and RM profit → chain-link backward to find base year cost",
+      "mark_value": 2,
+      "frequency_score": 7,
+      "difficulty_1_to_5": 5,
+      "display_order": 12,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000013-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak 2 wajaran tidak diketahui (p dan q) dalam jadual, indeks gubahan diberi → ungkapkan p dalam sebutan q (hasil: p = A − Bq)",
+      "step_description_en": "See 2 unknown weightages (p and q) in table, composite index given → express p in terms of q (result: p = A − Bq)",
+      "mark_value": 2,
+      "frequency_score": 7,
+      "difficulty_1_to_5": 5,
+      "display_order": 13,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "10000014-0000-0000-0000-000000000000",
+      "topic": "Index Numbers",
+      "step_description_bm": "Nampak 'harga bahan lain tidak berubah dari tahun X ke Y', satu bahan tidak diketahui, indeks gubahan diberi → cari % kenaikan bahan itu",
+      "step_description_en": "See 'other ingredient prices unchanged from year X to Y', one ingredient unknown, composite index given → find % increase of that ingredient",
+      "mark_value": 2,
+      "frequency_score": 7,
+      "difficulty_1_to_5": 5,
+      "display_order": 14,
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  ],
+
+  "step_variants": [
+
+    {
+      "id": "30010001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000001-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Harga sekilogram beras pada tahun 2020 (tahun asas) ialah RM4.00. Harga pada tahun 2023 ialah RM4.60. Kirakan indeks harga beras bagi tahun 2023.",
+      "prompt_en": "The price of rice per kg in 2020 (base year) was RM4.00. The price in 2023 was RM4.60. Calculate the price index of rice for 2023.",
+      "correct_answer_json": {
+        "expression": "(4.60/4.00)*100",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(4.00/4.60)*100",
+          "marks_awarded": 0,
+          "hint_key": "in_pat1_old_divide_new"
+        },
+        {
+          "expression": "((4.60-4.00)/4.00)*100",
+          "marks_awarded": 0,
+          "hint_key": "in_pat1_used_percentage_change"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30010002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000001-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Harga seunit barang X pada tahun asas ialah RM25.00 dan harga semasa ialah RM32.50. Kirakan indeks harga bagi barang X.",
+      "prompt_en": "The base year price of item X was RM25.00 and the current price is RM32.50. Calculate the price index for item X.",
+      "correct_answer_json": {
+        "expression": "(32.50/25.00)*100",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(25.00/32.50)*100",
+          "marks_awarded": 0,
+          "hint_key": "in_pat1_old_divide_new"
+        },
+        {
+          "expression": "32.50-25.00",
+          "marks_awarded": 0,
+          "hint_key": "in_pat1_subtracted_prices"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30010003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000001-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Harga seunit minyak masak pada tahun 2018 ialah RM6.00. Harga pada tahun 2022 ialah RM7.80. Cari indeks harga minyak masak bagi tahun 2022 berasaskan tahun 2018.",
+      "prompt_en": "The price of cooking oil per unit in 2018 was RM6.00. The price in 2022 was RM7.80. Find the price index for 2022 based on 2018.",
+      "correct_answer_json": {
+        "expression": "(7.80/6.00)*100",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(6.00/7.80)*100",
+          "marks_awarded": 0,
+          "hint_key": "in_pat1_old_divide_new"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30020001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000002-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Indeks harga bagi tepung gandum ialah 125. Harga tepung pada tahun asas ialah RM3.20 sekilogram. Hitung harga tepung pada tahun semasa.",
+      "prompt_en": "The price index for wheat flour is 125. The base year price is RM3.20 per kg. Calculate the current price of flour.",
+      "correct_answer_json": {
+        "expression": "(125/100)*3.20",
+        "tolerance": 0.01,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "3.20+125",
+          "marks_awarded": 0,
+          "hint_key": "in_pat2_added_index_to_price"
+        },
+        {
+          "expression": "(100/125)*3.20",
+          "marks_awarded": 0,
+          "hint_key": "in_pat2_inverted_index"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30020002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000002-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Indeks harga gula ialah 140 dan harga asasnya ialah RM2.50 sekilogram. Apakah harga semasa gula?",
+      "prompt_en": "The price index of sugar is 140 and its base price is RM2.50 per kg. What is the current price of sugar?",
+      "correct_answer_json": {
+        "expression": "(140/100)*2.50",
+        "tolerance": 0.01,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "2.50+40",
+          "marks_awarded": 0,
+          "hint_key": "in_pat2_added_index_to_price"
+        },
+        {
+          "expression": "2.50*140",
+          "marks_awarded": 0,
+          "hint_key": "in_pat2_forgot_divide_100"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30020003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000002-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Harga seunit barang pada tahun asas ialah RM12.00. Indeks harga bagi tahun semasa ialah 115. Cari harga barang itu pada tahun semasa.",
+      "prompt_en": "The base year price of an item is RM12.00. The price index for the current year is 115. Find the current price.",
+      "correct_answer_json": {
+        "expression": "(115/100)*12.00",
+        "tolerance": 0.01,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(100/115)*12.00",
+          "marks_awarded": 0,
+          "hint_key": "in_pat2_inverted_index"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30030001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000003-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Harga semasa seunit sabun mandi ialah RM5.50. Indeks harganya ialah 110. Kirakan harga sabun pada tahun asas.",
+      "prompt_en": "The current price of a bar of soap is RM5.50. Its price index is 110. Calculate the base year price of the soap.",
+      "correct_answer_json": {
+        "expression": "(5.50/110)*100",
+        "tolerance": 0.01,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(110/100)*5.50",
+          "marks_awarded": 0,
+          "hint_key": "in_pat3_used_pat2_formula"
+        },
+        {
+          "expression": "5.50-10",
+          "marks_awarded": 0,
+          "hint_key": "in_pat3_subtracted_index"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30030002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000003-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Harga semasa sebungkus mi ialah RM4.20 dan indeks harganya ialah 120. Berapakah harga mi pada tahun asas?",
+      "prompt_en": "The current price of a packet of noodles is RM4.20 and its price index is 120. What was the base year price?",
+      "correct_answer_json": {
+        "expression": "(4.20/120)*100",
+        "tolerance": 0.01,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(120/100)*4.20",
+          "marks_awarded": 0,
+          "hint_key": "in_pat3_used_pat2_formula"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30030003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000003-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Harga seunit barang pada tahun semasa ialah RM90.00 dan indeks harganya ialah 125. Cari harga barang itu pada tahun asas.",
+      "prompt_en": "The current price of an item is RM90.00 and its price index is 125. Find the base year price.",
+      "correct_answer_json": {
+        "expression": "(90.00/125)*100",
+        "tolerance": 0.01,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(125/100)*90.00",
+          "marks_awarded": 0,
+          "hint_key": "in_pat3_used_pat2_formula"
+        },
+        {
+          "expression": "90.00-25",
+          "marks_awarded": 0,
+          "hint_key": "in_pat3_subtracted_index"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30040001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000004-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Jadual di bawah menunjukkan indeks harga dan wajaran bagi empat bahan makanan.\n\n| Bahan | Indeks Harga | Wajaran |\n|-------|--------------|---------|\n| P     | 115          | 3       |\n| Q     | 125          | 2       |\n| R     | 108          | 4       |\n| S     | 130          | 1       |\n\nHitung indeks gubahan bagi kesemua bahan makanan tersebut.",
+      "prompt_en": "The table shows price indices and weights for four food items.\n\n| Item | Price Index | Weight |\n|------|-------------|--------|\n| P    | 115         | 3      |\n| Q    | 125         | 2      |\n| R    | 108         | 4      |\n| S    | 130         | 1      |\n\nCalculate the composite index for all these food items.",
+      "correct_answer_json": {
+        "expression": "(115*3+125*2+108*4+130*1)/(3+2+4+1)",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(115+125+108+130)/4",
+          "marks_awarded": 0,
+          "hint_key": "in_pat4_ignored_weights"
+        },
+        {
+          "expression": "115*3+125*2+108*4+130*1",
+          "marks_awarded": 0,
+          "hint_key": "in_pat4_forgot_divide_by_total_w"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30040002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000004-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Jadual menunjukkan indeks harga dan wajaran bagi tiga jenis bahan binaan.\n\n| Bahan | Indeks Harga | Wajaran |\n|-------|--------------|---------|\n| Simen | 120          | 5       |\n| Pasir | 105          | 3       |\n| Bata  | 130          | 2       |\n\nHitung indeks gubahan bagi bahan-bahan binaan ini.",
+      "prompt_en": "The table shows price indices and weights for three construction materials.\n\n| Material | Price Index | Weight |\n|----------|-------------|--------|\n| Cement   | 120         | 5      |\n| Sand     | 105         | 3      |\n| Bricks   | 130         | 2      |\n\nCalculate the composite index for these materials.",
+      "correct_answer_json": {
+        "expression": "(120*5+105*3+130*2)/(5+3+2)",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(120+105+130)/3",
+          "marks_awarded": 0,
+          "hint_key": "in_pat4_ignored_weights"
+        },
+        {
+          "expression": "(120*5+105*3+130*2)/3",
+          "marks_awarded": 0,
+          "hint_key": "in_pat4_divided_by_item_count_not_weight_sum"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30040003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000004-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Jadual menunjukkan indeks harga dan wajaran bagi lima jenis perbelanjaan isi rumah.\n\n| Jenis         | Indeks Harga | Wajaran |\n|---------------|--------------|---------|\n| Makanan       | 118          | 6       |\n| Pengangkutan  | 125          | 4       |\n| Perumahan     | 110          | 5       |\n| Pakaian       | 105          | 2       |\n| Lain-lain     | 130          | 3       |\n\nHitung indeks gubahan perbelanjaan isi rumah ini.",
+      "prompt_en": "The table shows price indices and weights for five household expenditure categories.\n\n| Category      | Price Index | Weight |\n|---------------|-------------|--------|\n| Food          | 118         | 6      |\n| Transport     | 125         | 4      |\n| Housing       | 110         | 5      |\n| Clothing      | 105         | 2      |\n| Others        | 130         | 3      |\n\nCalculate the composite index for this household expenditure.",
+      "correct_answer_json": {
+        "expression": "(118*6+125*4+110*5+105*2+130*3)/(6+4+5+2+3)",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(118+125+110+105+130)/5",
+          "marks_awarded": 0,
+          "hint_key": "in_pat4_ignored_weights"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30050001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000005-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Jadual di bawah menunjukkan indeks harga dan wajaran bagi tiga bahan.\n\n| Bahan | Indeks Harga | Wajaran |\n|-------|--------------|---------|\n| A     | 100          | 3       |\n| B     | 150          | m       |\n\nDiberi indeks gubahan ialah 120. Cari nilai m.",
+      "prompt_en": "The table shows price indices and weights for two materials.\n\n| Item | Price Index | Weight |\n|------|-------------|--------|\n| A    | 100         | 3      |\n| B    | 150         | m      |\n\nGiven the composite index is 120, find the value of m.",
+      "correct_answer_json": {
+        "expression": "(120*3-100*3)/(150-120)",
+        "tolerance": 0.05
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(150-120)/(120-100)",
+          "marks_awarded": 0,
+          "hint_key": "in_pat5_inverted_ratio"
+        },
+        {
+          "expression": "120/150*3",
+          "marks_awarded": 0,
+          "hint_key": "in_pat5_wrong_rearrangement"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30050002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000005-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Jadual di bawah menunjukkan maklumat tentang empat jenis barang.\n\n| Barang | Indeks Harga | Wajaran |\n|--------|--------------|---------|\n| W      | 110          | 2       |\n| X      | 130          | 3       |\n| Y      | 150          | k       |\n\nIndeks gubahan bagi kesemua barang ialah 130. Cari nilai k.",
+      "prompt_en": "The table shows information about three types of goods.\n\n| Good | Price Index | Weight |\n|------|-------------|--------|\n| W    | 110         | 2      |\n| X    | 130         | 3      |\n| Y    | 150         | k      |\n\nThe composite index is 130. Find the value of k.",
+      "correct_answer_json": {
+        "expression": "(130*(2+3)-110*2-130*3)/(150-130)",
+        "tolerance": 0.05
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(130*(2+3+1)-110*2-130*3)/150",
+          "marks_awarded": 0,
+          "hint_key": "in_pat5_wrong_rearrangement"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30050003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000005-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Jadual di bawah menunjukkan data bagi dua jenis bahan.\n\n| Bahan | Indeks Harga | Wajaran |\n|-------|--------------|---------|\n| J     | 120          | 2       |\n| K     | 110          | t       |\n\nIndeks gubahan ialah 114. Cari nilai t.",
+      "prompt_en": "The table below shows data for two types of materials.\n\n| Material | Price Index | Weight |\n|----------|-------------|--------|\n| J        | 120         | 2      |\n| K        | 110         | t      |\n\nThe composite index is 114. Find the value of t.",
+      "correct_answer_json": {
+        "expression": "(120*2-114*2)/(114-110)",
+        "tolerance": 0.05
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(114-110)/(120-114)",
+          "marks_awarded": 0,
+          "hint_key": "in_pat5_inverted_ratio"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30060001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000006-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Jadual di bawah menunjukkan indeks harga dan wajaran bagi dua jenis barang.\n\n| Barang | Indeks Harga | Wajaran |\n|--------|--------------|---------|\n| A      | p            | 2       |\n| B      | 120          | 3       |\n\nDiberi indeks gubahan ialah 116, cari nilai p.",
+      "prompt_en": "The table shows price indices and weights for two goods.\n\n| Good | Price Index | Weight |\n|------|-------------|--------|\n| A    | p           | 2      |\n| B    | 120         | 3      |\n\nGiven composite index is 116, find the value of p.",
+      "correct_answer_json": {
+        "expression": "(116*(2+3)-120*3)/2",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "116-120",
+          "marks_awarded": 0,
+          "hint_key": "in_pat6_just_subtracted"
+        },
+        {
+          "expression": "(116*5-120*3)*2",
+          "marks_awarded": 0,
+          "hint_key": "in_pat6_multiplied_instead_of_divided"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30060002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000006-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Jadual di bawah menunjukkan data bagi tiga bahan.\n\n| Bahan | Indeks Harga | Wajaran |\n|-------|--------------|---------|\n| P     | 100          | 1       |\n| Q     | x            | 2       |\n| R     | 130          | 3       |\n\nIndeks gubahan ialah 120. Cari nilai x.",
+      "prompt_en": "The table shows data for three materials.\n\n| Material | Price Index | Weight |\n|----------|-------------|--------|\n| P        | 100         | 1      |\n| Q        | x           | 2      |\n| R        | 130         | 3      |\n\nComposite index is 120. Find the value of x.",
+      "correct_answer_json": {
+        "expression": "(120*(1+2+3)-100*1-130*3)/2",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(120*6-100-130)/2",
+          "marks_awarded": 0,
+          "hint_key": "in_pat6_forgot_weights_when_summing"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30060003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000006-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Jadual di bawah menunjukkan indeks harga dan wajaran empat jenis perbelanjaan.\n\n| Jenis   | Indeks Harga | Wajaran |\n|---------|--------------|---------|\n| A       | 108          | 3       |\n| B       | y            | 2       |\n| C       | 115          | 4       |\n| D       | 120          | 1       |\n\nIndeks gubahan ialah 113. Cari nilai y.",
+      "prompt_en": "The table shows price indices and weights for four types of expenditure.\n\n| Type | Price Index | Weight |\n|------|-------------|--------|\n| A    | 108         | 3      |\n| B    | y           | 2      |\n| C    | 115         | 4      |\n| D    | 120         | 1      |\n\nComposite index is 113. Find the value of y.",
+      "correct_answer_json": {
+        "expression": "(113*(3+2+4+1)-108*3-115*4-120*1)/2",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(113*4-108-115-120)/2",
+          "marks_awarded": 0,
+          "hint_key": "in_pat6_forgot_weights_when_summing"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30070001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000007-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Indeks harga bagi tahun 2020 berasaskan tahun 2015 ialah 120. Indeks harga bagi tahun 2023 berasaskan tahun 2020 ialah 115. Kirakan indeks harga bagi tahun 2023 dengan tahun 2015 sebagai tahun asas.",
+      "prompt_en": "The price index for 2020 based on 2015 is 120. The price index for 2023 based on 2020 is 115. Calculate the price index for 2023 with 2015 as the base year.",
+      "correct_answer_json": {
+        "expression": "(120*115)/100",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "120+115",
+          "marks_awarded": 0,
+          "hint_key": "in_pat7_added_indices"
+        },
+        {
+          "expression": "(120+115)/2",
+          "marks_awarded": 0,
+          "hint_key": "in_pat7_averaged_indices"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30070002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000007-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Indeks harga 2019 berasaskan 2016 ialah 130. Indeks harga 2023 berasaskan 2019 ialah 110. Kirakan indeks harga 2023 berasaskan 2016.",
+      "prompt_en": "The price index for 2019 based on 2016 is 130. The price index for 2023 based on 2019 is 110. Calculate the price index for 2023 based on 2016.",
+      "correct_answer_json": {
+        "expression": "(130*110)/100",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "130+110-100",
+          "marks_awarded": 0,
+          "hint_key": "in_pat7_added_then_minus_100"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30070003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000007-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Indeks gubahan bagi tahun 2021 berasaskan tahun 2018 ialah 125. Indeks gubahan bagi tahun 2024 berasaskan tahun 2021 ialah 104. Kirakan indeks gubahan bagi tahun 2024 dengan tahun 2018 sebagai tahun asas.",
+      "prompt_en": "The composite index for 2021 based on 2018 is 125. The composite index for 2024 based on 2021 is 104. Calculate the composite index for 2024 with 2018 as the base year.",
+      "correct_answer_json": {
+        "expression": "(125*104)/100",
+        "tolerance": 0.1
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "125+104-100",
+          "marks_awarded": 0,
+          "hint_key": "in_pat7_added_then_minus_100"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30080001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000008-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Harga seunit barang pada tahun 2020 ialah RM80.00. Indeks gubahan bagi tahun 2024 berasaskan tahun 2020 ialah 135. Hitung harga barang itu pada tahun 2024.",
+      "prompt_en": "The price of an item in 2020 was RM80.00. The composite index for 2024 based on 2020 is 135. Calculate the price of the item in 2024.",
+      "correct_answer_json": {
+        "expression": "(135/100)*80.00",
+        "tolerance": 0.05,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "80.00+135",
+          "marks_awarded": 0,
+          "hint_key": "in_pat8_added_index_to_price"
+        },
+        {
+          "expression": "(135-100)+80.00",
+          "marks_awarded": 0,
+          "hint_key": "in_pat8_added_increase_only"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30080002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000008-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Kos membuat sesebuah produk pada tahun asas ialah RM240.00. Diberi bahawa indeks gubahan bagi tahun semasa ialah 125. Hitungkan kos membuat produk itu pada tahun semasa.",
+      "prompt_en": "The cost of making a product in the base year was RM240.00. Given that the composite index for the current year is 125, calculate the cost of making the product now.",
+      "correct_answer_json": {
+        "expression": "(125/100)*240.00",
+        "tolerance": 0.05,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "(100/125)*240.00",
+          "marks_awarded": 0,
+          "hint_key": "in_pat8_inverted_index"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30080003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000008-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Harga sekilogram ayam pada tahun 2019 ialah RM9.00. Indeks gubahan bagi tahun 2023 berasaskan 2019 ialah 118. Berapakah harga ayam pada tahun 2023?",
+      "prompt_en": "The price of chicken per kg in 2019 was RM9.00. The composite index for 2023 based on 2019 is 118. What is the price of chicken in 2023?",
+      "correct_answer_json": {
+        "expression": "(118/100)*9.00",
+        "tolerance": 0.01,
+        "unit": "RM"
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "9.00+18",
+          "marks_awarded": 0,
+          "hint_key": "in_pat8_added_increase_only"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30090001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000009-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Harga sebungkus biskut meningkat sebanyak 25% dari tahun 2020 ke tahun 2022. Nyatakan indeks harga biskut itu pada tahun 2022 berasaskan tahun 2020.",
+      "prompt_en": "The price of a packet of biscuits increased by 25% from 2020 to 2022. State the price index of the biscuit for 2022 based on 2020.",
+      "correct_answer_json": { "expression": "100+25", "tolerance": 0 },
+      "common_wrongs_json": [
+        { "expression": "25", "marks_awarded": 0, "hint_key": "in_pat9_wrote_pct_not_index" },
+        { "expression": "100-25", "marks_awarded": 0, "hint_key": "in_pat9_subtracted_instead_of_added" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30090002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000009-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Harga sekilogram gula menyusut sebanyak 20% dari tahun 2019 ke tahun 2021. Nyatakan nilai indeks harga gula bagi tahun 2021 berasaskan tahun 2019.",
+      "prompt_en": "The price of sugar per kg decreased by 20% from 2019 to 2021. State the price index for 2021 based on 2019.",
+      "correct_answer_json": { "expression": "100-20", "tolerance": 0 },
+      "common_wrongs_json": [
+        { "expression": "20", "marks_awarded": 0, "hint_key": "in_pat9_wrote_pct_not_index" },
+        { "expression": "100+20", "marks_awarded": 0, "hint_key": "in_pat9_added_instead_of_subtracted" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30090003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000009-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Harga sebotol minyak masak menyusut 15% dari tahun asas ke tahun semasa. Nyatakan indeks harga minyak masak itu.",
+      "prompt_en": "The price of a bottle of cooking oil decreased by 15% from the base year to the current year. State the price index.",
+      "correct_answer_json": { "expression": "100-15", "tolerance": 0 },
+      "common_wrongs_json": [
+        { "expression": "15", "marks_awarded": 0, "hint_key": "in_pat9_wrote_pct_not_index" },
+        { "expression": "115", "marks_awarded": 0, "hint_key": "in_pat9_added_instead_of_subtracted" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30100001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000010-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Indeks harga bahan Q pada tahun 2021 berasaskan tahun 2019 ialah 140. Harga bahan Q pada tahun 2019 adalah RM6 kurang daripada harganya pada tahun 2021. Cari harga bahan Q pada tahun 2019.",
+      "prompt_en": "The price index of ingredient Q for 2021 based on 2019 is 140. The 2019 price of Q is RM6 less than its 2021 price. Find the price of Q in 2019.",
+      "correct_answer_json": { "expression": "(100*6)/(140-100)", "tolerance": 0.01, "unit": "RM" },
+      "common_wrongs_json": [
+        { "expression": "(140/100)*6", "marks_awarded": 0, "hint_key": "in_pat10_applied_index_to_diff" },
+        { "expression": "6/(140-100)", "marks_awarded": 0, "hint_key": "in_pat10_forgot_times_100" },
+        { "expression": "(140-100)/6", "marks_awarded": 0, "hint_key": "in_pat10_inverted_formula" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30100002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000010-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Indeks harga bahan R ialah 125. Harga bahan R pada tahun asas adalah RM5 kurang daripada harganya pada tahun semasa. Cari harga bahan R pada tahun asas.",
+      "prompt_en": "The price index of ingredient R is 125. The base year price of R is RM5 less than its current price. Find the base year price of R.",
+      "correct_answer_json": { "expression": "(100*5)/(125-100)", "tolerance": 0.01, "unit": "RM" },
+      "common_wrongs_json": [
+        { "expression": "(125/100)*5", "marks_awarded": 0, "hint_key": "in_pat10_applied_index_to_diff" },
+        { "expression": "5/(125-100)", "marks_awarded": 0, "hint_key": "in_pat10_forgot_times_100" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30100003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000010-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Indeks harga bahan S ialah 150. Harga bahan S pada tahun asas adalah RM12 kurang daripada harganya pada tahun semasa. Cari harga bahan S pada tahun asas.",
+      "prompt_en": "The price index of ingredient S is 150. The base year price of S is RM12 less than its current price. Find the base year price of S.",
+      "correct_answer_json": { "expression": "(100*12)/(150-100)", "tolerance": 0.01, "unit": "RM" },
+      "common_wrongs_json": [
+        { "expression": "(150/100)*12", "marks_awarded": 0, "hint_key": "in_pat10_applied_index_to_diff" },
+        { "expression": "12+(100*12)/(150-100)", "marks_awarded": 0, "hint_key": "in_pat10_found_current_not_base" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30110001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000011-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Nisbah penggunaan bahan A, B, C dan D ialah 3 : 2 : m : 4. Indeks harga masing-masing ialah 110, 112.5, 150 dan 120. Indeks gubahan ialah 127.5. Cari nilai m.",
+      "prompt_en": "The ratio of ingredients A, B, C and D used is 3 : 2 : m : 4. Their price indices are 110, 112.5, 150 and 120. The composite index is 127.5. Find the value of m.",
+      "correct_answer_json": { "expression": "(127.5*(3+2+4)-3*110-2*112.5-4*120)/(150-127.5)", "tolerance": 0.05 },
+      "common_wrongs_json": [
+        { "expression": "(127.5*4-110-112.5-120)/(150-127.5)", "marks_awarded": 0, "hint_key": "in_pat11_used_item_count_not_weights" },
+        { "expression": "(127.5*(3+2+4+1)-3*110-2*112.5-4*120)/(150-127.5)", "marks_awarded": 0, "hint_key": "in_pat11_added_1_to_denom" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30110002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000011-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Nisbah penggunaan bahan A, B, C dan D ialah 2 : m : 3 : 1. Indeks harga masing-masing ialah 120, 140, 110 dan 130. Indeks gubahan ialah 130. Cari nilai m.",
+      "prompt_en": "The ratio of ingredients A, B, C and D used is 2 : m : 3 : 1. Their price indices are 120, 140, 110 and 130. The composite index is 130. Find the value of m.",
+      "correct_answer_json": { "expression": "(130*(2+3+1)-2*120-3*110-1*130)/(140-130)", "tolerance": 0.05 },
+      "common_wrongs_json": [
+        { "expression": "(130*4-120-110-130)/(140-130)", "marks_awarded": 0, "hint_key": "in_pat11_used_item_count_not_weights" },
+        { "expression": "(130*(2+3+1)-2*120-3*110-1*130)/(130-140)", "marks_awarded": 0, "hint_key": "in_pat11_sign_error_denominator" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30110003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000011-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Nisbah penggunaan bahan A, B, C dan D ialah 1 : 3 : 2 : m. Indeks harga masing-masing ialah 115, 125, 160 dan 105. Indeks gubahan ialah 125. Cari nilai m.",
+      "prompt_en": "The ratio of ingredients A, B, C and D used is 1 : 3 : 2 : m. Their price indices are 115, 125, 160 and 105. The composite index is 125. Find the value of m.",
+      "correct_answer_json": { "expression": "(125*(1+3+2)-1*115-3*125-2*160)/(105-125)", "tolerance": 0.05 },
+      "common_wrongs_json": [
+        { "expression": "(125*(1+3+2)-1*115-3*125-2*160)/(125-105)", "marks_awarded": 0, "hint_key": "in_pat11_sign_error_denominator" },
+        { "expression": "(125*4-115-125-160)/(105-125)", "marks_awarded": 0, "hint_key": "in_pat11_used_item_count_not_weights" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30120001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000012-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Kos pembuatan makanan meningkat 40% dari tahun 2020 ke tahun 2021. Harga jual sebungkus makanan itu ialah RM43 dengan keuntungan RM5 pada tahun 2021. Indeks gubahan 2020 berasaskan 2018 ialah 105.20. Hitung kos pembuatan pada tahun 2018.",
+      "prompt_en": "Production cost increased 40% from 2020 to 2021. Selling price is RM43 with RM5 profit in 2021. Composite index 2020/2018 is 105.20. Calculate the production cost in 2018.",
+      "correct_answer_json": { "expression": "(43-5)*100/((105.20*140)/100)", "tolerance": 0.01, "unit": "RM" },
+      "common_wrongs_json": [
+        { "expression": "(43-5)*100/105.20", "marks_awarded": 0, "hint_key": "in_pat12_forgot_to_chain_link" },
+        { "expression": "43*100/((105.20*140)/100)", "marks_awarded": 0, "hint_key": "in_pat12_used_selling_price_not_cost" },
+        { "expression": "(43-5)*100/(105.20+40)", "marks_awarded": 0, "hint_key": "in_pat12_added_pct_instead_of_chaining" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30120002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000012-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Kos meningkat 25% dari tahun 2022 ke tahun 2023. Harga jual seunit produk itu ialah RM50 dengan keuntungan RM5 pada tahun 2023. Indeks gubahan 2022 berasaskan 2020 ialah 120. Hitung kos pada tahun 2020.",
+      "prompt_en": "Cost increased 25% from 2022 to 2023. Selling price is RM50 with RM5 profit in 2023. Composite index 2022/2020 is 120. Calculate the cost in 2020.",
+      "correct_answer_json": { "expression": "(50-5)*100/((120*125)/100)", "tolerance": 0.01, "unit": "RM" },
+      "common_wrongs_json": [
+        { "expression": "(50-5)*100/120", "marks_awarded": 0, "hint_key": "in_pat12_forgot_to_chain_link" },
+        { "expression": "(50-5)*100/125", "marks_awarded": 0, "hint_key": "in_pat12_used_only_second_index" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30120003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000012-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Kos meningkat 20% dari tahun 2021 ke tahun 2022. Harga jual ialah RM45 dengan keuntungan RM3 pada tahun 2022. Indeks gubahan 2021 berasaskan 2019 ialah 125. Hitung kos pada tahun 2019.",
+      "prompt_en": "Cost increased 20% from 2021 to 2022. Selling price is RM45 with RM3 profit in 2022. Composite index 2021/2019 is 125. Calculate the cost in 2019.",
+      "correct_answer_json": { "expression": "(45-3)*100/((125*120)/100)", "tolerance": 0.01, "unit": "RM" },
+      "common_wrongs_json": [
+        { "expression": "(45-3)*100/((125*120)/100)+3", "marks_awarded": 0, "hint_key": "in_pat12_added_profit_to_base" },
+        { "expression": "45*100/((125*120)/100)", "marks_awarded": 0, "hint_key": "in_pat12_used_selling_price_not_cost" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30130001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000013-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Jadual: bahan P(I=130,w=5), Q(I=140,w=p), R(I=160,w=q), S(I=110,w=3). Indeks gubahan=132. Jika q=2, cari nilai p.",
+      "prompt_en": "Table: item P(I=130,w=5), Q(I=140,w=p), R(I=160,w=q), S(I=110,w=3). Composite index=132. If q=2, find the value of p.",
+      "correct_answer_json": { "expression": "(132*(5+2+3)-130*5-160*2-110*3)/(140-132)", "tolerance": 0.05 },
+      "common_wrongs_json": [
+        { "expression": "(132*4-130-160-110)/(140-132)", "marks_awarded": 0, "hint_key": "in_pat13_used_item_count_not_total_w" },
+        { "expression": "(132*(5+2+3)-130*5-160*2-110*3)/(132-140)", "marks_awarded": 0, "hint_key": "in_pat13_sign_error_on_denominator" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30130002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000013-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Jadual: bahan A(I=120,w=3), B(I=140,w=p), C(I=160,w=q), D(I=110,w=2). Indeks gubahan=130. Jika q=1, cari nilai p.",
+      "prompt_en": "Table: item A(I=120,w=3), B(I=140,w=p), C(I=160,w=q), D(I=110,w=2). Composite index=130. If q=1, find the value of p.",
+      "correct_answer_json": { "expression": "(130*(3+1+2)-120*3-160*1-110*2)/(140-130)", "tolerance": 0.05 },
+      "common_wrongs_json": [
+        { "expression": "(130*(3+1+2)-120*3-160*1-110*2)/(130-140)", "marks_awarded": 0, "hint_key": "in_pat13_sign_error_on_denominator" },
+        { "expression": "(130*4-120-160-110)/(140-130)", "marks_awarded": 0, "hint_key": "in_pat13_used_item_count_not_total_w" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30130003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000013-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Jadual: bahan A(I=120,w=2), B(I=160,w=p), C(I=140,w=q), D(I=110,w=3). Indeks gubahan=130. Jika q=2, cari nilai p.",
+      "prompt_en": "Table: item A(I=120,w=2), B(I=160,w=p), C(I=140,w=q), D(I=110,w=3). Composite index=130. If q=2, find the value of p.",
+      "correct_answer_json": { "expression": "(130*(2+2+3)-120*2-140*2-110*3)/(160-130)", "tolerance": 0.05 },
+      "common_wrongs_json": [
+        { "expression": "(130*(2+2+3)-120*2-140*2-110*3)/(130-160)", "marks_awarded": 0, "hint_key": "in_pat13_sign_error_on_denominator" },
+        { "expression": "(130*4-120-140-110)/(160-130)", "marks_awarded": 0, "hint_key": "in_pat13_used_item_count_not_total_w" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "30140001-0000-0000-0000-000000000000",
+      "kp_step_id": "10000014-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Wajaran A:B:C:D = 3:2:5:4. Indeks gubahan 2025 berasaskan 2021 ialah 153. Harga bahan A, B dan D tidak berubah dari 2023 ke 2025; indeks 2023/2021 mereka ialah 110, 112.5 dan 120. Cari peratus kenaikan harga bahan C dari 2021 ke 2025.",
+      "prompt_en": "Weightages A:B:C:D = 3:2:5:4. Composite index 2025/2021 is 153. Prices of A, B, D unchanged from 2023 to 2025; their 2023/2021 indices are 110, 112.5 and 120. Find the % increase in price of ingredient C from 2021 to 2025.",
+      "correct_answer_json": { "expression": "(153*14-3*110-2*112.5-4*120)/5-100", "tolerance": 0.1 },
+      "common_wrongs_json": [
+        { "expression": "153-100", "marks_awarded": 0, "hint_key": "in_pat14_used_chain_index_directly" },
+        { "expression": "(153*14-3*110-2*112.5-4*120)/5", "marks_awarded": 0, "hint_key": "in_pat14_forgot_minus_100" },
+        { "expression": "(153*4-110-112.5-120)/5-100", "marks_awarded": 0, "hint_key": "in_pat14_used_item_count_not_weights" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30140002-0000-0000-0000-000000000000",
+      "kp_step_id": "10000014-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Wajaran A:B:C:D = 3:2:2:3. Indeks gubahan 2025 berasaskan 2021 ialah 135. Harga bahan A, B dan D tidak berubah dari 2023 ke 2025; indeks 2023/2021 mereka ialah 115, 120 dan 110. Cari peratus kenaikan harga bahan C dari 2021 ke 2025.",
+      "prompt_en": "Weightages A:B:C:D = 3:2:2:3. Composite index 2025/2021 is 135. Prices of A, B, D unchanged 2023 to 2025; their 2023/2021 indices are 115, 120 and 110. Find the % increase in price of ingredient C from 2021 to 2025.",
+      "correct_answer_json": { "expression": "(135*10-3*115-2*120-3*110)/2-100", "tolerance": 0.1 },
+      "common_wrongs_json": [
+        { "expression": "135-100", "marks_awarded": 0, "hint_key": "in_pat14_used_chain_index_directly" },
+        { "expression": "(135*10-3*115-2*120-3*110)/2", "marks_awarded": 0, "hint_key": "in_pat14_forgot_minus_100" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "30140003-0000-0000-0000-000000000000",
+      "kp_step_id": "10000014-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Wajaran A:B:C:D = 3:1:2:4. Indeks gubahan 2025 berasaskan 2021 ialah 145. Harga bahan A, B dan D tidak berubah dari 2023 ke 2025; indeks 2023/2021 mereka ialah 120, 130 dan 115. Cari peratus kenaikan harga bahan C dari 2021 ke 2025.",
+      "prompt_en": "Weightages A:B:C:D = 3:1:2:4. Composite index 2025/2021 is 145. Prices of A, B, D unchanged 2023 to 2025; their 2023/2021 indices are 120, 130 and 115. Find the % increase in price of ingredient C from 2021 to 2025.",
+      "correct_answer_json": { "expression": "(145*10-3*120-1*130-4*115)/2-100", "tolerance": 0.1 },
+      "common_wrongs_json": [
+        { "expression": "145-100", "marks_awarded": 0, "hint_key": "in_pat14_used_chain_index_directly" },
+        { "expression": "(145*10-3*120-1*130-4*115)/2", "marks_awarded": 0, "hint_key": "in_pat14_forgot_minus_100" }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+
+  ]
+}

@@ -14,7 +14,7 @@ export const Nav = () => {
       className="sticky top-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60"
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="font-serif text-2xl text-foreground">Tactiq</a>
+        <a href="#" className="font-serif text-2xl text-foreground">tacly</a>
         <div className="flex items-center gap-4 md:gap-8 text-sm">
           <a href="#method" className="hidden md:inline text-foreground/80 hover:text-foreground transition">{tr("navMethod")}</a>
           <a onClick={() => setLoginOpen(true)} className="cursor-pointer hidden md:inline text-foreground/80 hover:text-foreground transition">
@@ -30,7 +30,7 @@ export const Nav = () => {
               </button>
             ))}
           </div>
-          <a href="#waitlist" className="hidden md:inline px-4 py-2 rounded-full border border-sage text-foreground hover:bg-sage/20 transition">
+          <a href="https://forms.gle/uJKuzE6MjDQmaq5VA" className="hidden md:inline px-4 py-2 rounded-full border border-sage text-foreground hover:bg-sage/20 transition">
             {tr("navWaitlist")}
           </a>
         </div>

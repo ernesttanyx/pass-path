@@ -1,0 +1,662 @@
+{
+  "year": 2023,
+  "state": "SPM Trial",
+  "paper_number": 1,
+  "source": "SBP (Sekolah Berasrama Penuh) Pentaksiran Diagnostik Akademik 2023",
+  "questions": [
+    {
+      "question_number": 1,
+      "topic": "Linear Law",
+      "marks": 4,
+      "question_text": "Diagram 1 shows the straight line graph obtained by plotting xy against (x+y). [Diagram: straight line passing through points (3, 8) and (6, 2) on a xy vs (x+y) axes]. Express y in terms of x.",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "Find gradient: m = (8-2)/(3-6) = -2",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "Substitute a point to find y-intercept c: 2 = -2(6) + c, so c = 14",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "Write the linear law equation: xy = -2(x+y) + 14",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "Express y in terms of x: y = (14 - 2x) / (2 + x)",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 2,
+      "topic": "Quadratic Functions",
+      "marks": 2,
+      "question_text": "Given that the quadratic equation (p+1)x^2 + 2qx + 3 = 0, where p and q are constants, has two real and equal roots. Express p in terms of q.",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "Use equal roots condition b^2 - 4ac = 0: (2q)^2 - 4(p+1)(3) = 0",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "p = (q^2 - 3)/3  or equivalently  p = q^2/3 - 1",
+          "mark_type": "A",
+          "marks": 1,
+          "accept_alternatives": ["p = q^2/3 - 1"]
+        }
+      ]
+    },
+    {
+      "question_number": 3,
+      "topic": "Quadratic Functions",
+      "marks": 6,
+      "question_text": "(a) Given that the quadratic equation mx^2 + (m-2)x + 3m + 2 = 0, where m is a non-zero integer. Find the value of m such that one root is the reciprocal of the other. [2 marks]\n(b) The graph of the quadratic function f(x) = -x^2 + 2px - 5p, where p is a constant, has a maximum value of 6.\n  (i) By using the method of completing the square, find the possible values of p.\n  (ii) The graph y = g(x) is the reflection of y = f(x) about the x-axis. By using the positive value of p from (b)(i), write the function g(x). [4 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a) Use product of roots: if roots are α and 1/α, then α × (1/α) = (3m+2)/m",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a) m = -1",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(b)(i) Complete the square: f(x) = -[x^2 - 2px + (-p)^2 - (-p)^2 + 5p] = -[(x-p)^2 - p^2 + 5p]",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(b)(i) Equate maximum value to 6: p^2 - 5p = 6, so p^2 - 5p - 6 = 0",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b)(i) p = 6 or p = -1",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(b)(ii) Using p = 6 (positive value), reflection about x-axis negates f(x): g(x) = (x-6)^2 - 6",
+          "mark_type": "A",
+          "marks": 1,
+          "accept_alternatives": ["g(x) = x^2 - 12x + 30"]
+        }
+      ]
+    },
+    {
+      "question_number": 4,
+      "topic": "Coordinate Geometry",
+      "marks": 5,
+      "question_text": "(a) Solution by scale drawing is NOT accepted. Diagram 2(a) shows three straight lines. The line BC is perpendicular to line AB and parallel to line AD. [Diagram: lines AB and AD going left-downward from different points, line BC vertical, points A left of y-axis, B on y-axis, C on x-axis, D below x-axis]. Given the coordinates of B and C are (0, 6) and (3, 0) respectively. Find the coordinates of A and D. [3 marks]\n(b) Diagram 2(b) shows part of locus P. [Diagram: quarter circle in second/first quadrant touching x-axis at (-10, 0) and y-axis at (0, 10), centre at origin]. Find the equation of locus P. [2 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a) Find gradient of BC and use perpendicularity m1 × m2 = -1: gradient BC = (0-6)/(3-0) = -2; so gradient AB = 1/2",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a) Find A using gradient AB through B(0,6): (6-0)/(0-x) = 1/2 → A at y=0; find D using gradient AD = -2 through A",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a) A(-12, 0) and D(0, -24)",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(b) Locus P is equidistant from origin at distance 10: sqrt((x-0)^2 + (y-0)^2) = 10",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) x^2 + y^2 - 100 = 0",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 5,
+      "topic": "Functions",
+      "marks": 4,
+      "question_text": "(a) The following ordered pairs represents the function h(x): {(-4, 3), (-3, 2), (-2, 1), (1, 2), (k+1, 3)}.\n  (i) Find the value of k.\n  (ii) Using function notation, write h(x) in terms of x. [2 marks]\n(b) Given that f(x) = (x-3)^2 + 1, x >= m, such that f^(-1) exists.\n  (i) Determine the value of m.\n  (ii) Find the range of values of f(x). [2 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a)(i) For the function to be valid, (k+1, 3) must not repeat any x-value. The pattern shows h maps |x+1| to its absolute value: k+1 = 2, so k = 1",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a)(ii) h(x) = |x + 1|",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(b)(i) For f^(-1) to exist, f must be one-to-one. The minimum of f(x) = (x-3)^2 + 1 is at x = 3, so m = 3",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(b)(ii) f(x) >= 1",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 6,
+      "topic": "Vectors",
+      "marks": 6,
+      "question_text": "Given vector PQ = (5, 7), vector OQ = (2, 3) and vector RS = (k, 5). Find\n(a) the coordinates of P, [2 marks]\n(b) the unit vector in the direction of vector OP, [2 marks]\n(c) the value of k if vector RS is parallel to vector PQ. [2 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a) Use triangle law: vector OP = vector OQ + vector QP = OQ - PQ",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a) P(-3, -4)",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(b) Find magnitude |OP| = sqrt((-3)^2 + (-4)^2) = 5",
+          "mark_type": "M",
+          "marks": 1,
+          "bod_note": "Magnitude may be implied by correct final answer"
+        },
+        {
+          "step_number": 4,
+          "description": "(b) Unit vector = (-3i - 4j)/5  or  (-3/5)i - (4/5)j",
+          "mark_type": "A",
+          "marks": 1,
+          "accept_alternatives": ["-3i/5 - 4j/5", "(-3/5, -4/5)"]
+        },
+        {
+          "step_number": 5,
+          "description": "(c) Parallel vectors are scalar multiples: RS = λ(PQ), so (k, 5) = λ(5, 7)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(c) k = 25/7",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 7,
+      "topic": "Functions",
+      "marks": 5,
+      "question_text": "The Biz Company is promoting a big sale for the 9/9 sales carnival. All smartphones are given a 15% sales discount. The price D after the sales discount is D(p) = 0.85p, where p is the original price of the smartphone. Intan plans to buy a smartphone from Biz Company. Since she was selected as the company's 100,000th customer, she is eligible for a RM20 coupon for the smartphone purchased. The price K after the coupon discount is K(p) = p - 20, where p is the original price.\n(a) Intan may use both price discounts. Write a composite function based on the following situations:\n  (i) Situation 1 — Taking the sale discount first then taking the coupon.\n  (ii) Situation 2 — Taking the coupon first then taking the sale discount. [3 marks]\n(b) Hence, calculate the lowest price paid by Intan if the original price of the smartphone is RM1899. State your answer to the nearest RM. [2 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "Identify the composite functions KD(p) and DK(p)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a)(i) Situation 1 (sale discount D first, then coupon K): KD(p) = K(D(p)) = 0.85p - 20",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a)(ii) Situation 2 (coupon K first, then sale discount D): DK(p) = D(K(p)) = 0.85(p - 20) = 0.85p - 17",
+          "mark_type": "A",
+          "marks": 1,
+          "accept_alternatives": ["DK(p) = 0.85(p-20)"]
+        },
+        {
+          "step_number": 4,
+          "description": "(b) KD gives lower price; substitute: KD(1899) = 0.85(1899) - 20",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) RM 1594",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 8,
+      "topic": "Progressions",
+      "marks": 7,
+      "question_text": "(a) Given that a is the first term and d is the common difference of an arithmetic progression. Show that the sum of the first n terms of the progression is S_n = (n/2)[2a + (n-1)d]. [3 marks]\n(b) Zaki Bakery has sold 400 cakes on the first week. On the second week, the sales decreased by 8 cakes until the 7th week. On the following week (8th week), due to promotion, the sales increased by 100% compared to the previous week. By using the formula in 8(a), calculate the total number of cakes sold starting from the first week until the promotion week. [4 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a) Write S_n forwards using T_n = a + (n-1)d: S_n = a + (a+d) + ... + [a+(n-1)d]",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a) Write S_n backwards and add: 2S_n = [2a+(n-1)d] + [2a+(n-1)d] + ... (n terms)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a) S_n = (n/2)[2a + (n-1)d] (shown)",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(b) Apply formula with a=400, d=-8: S_7 = (7/2)[2(400) + (7-1)(-8)]",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) Find promotion week sales T_8 = 2 × T_7; T_7 = 400 + (7-1)(-8) = 352, so T_8 = 704",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(b) Total = S_7 + T_8",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 7,
+          "description": "(b) 3336 cakes",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 9,
+      "topic": "Differentiation",
+      "marks": 6,
+      "question_text": "Given that the equation of a curve is y = 2x^2 + x + 1.\n(a) Find the equation of the normal to the curve at point (2, 11). [4 marks]\n(b) Hence, find the coordinates of the point such that the normal meets the curve again. [2 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a) Differentiate and substitute x=2 to get tangent gradient: dy/dx = 4x+1; at x=2, dy/dx = 9",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a) Normal gradient using m1 × m2 = -1: m_normal = -1/9",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a) Substitute into point-gradient form: y - 11 = -1/9 (x - 2)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(a) y = -x/9 + 101/9",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) Equate normal and curve: -x/9 + 101/9 = 2x^2 + x + 1",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(b) (-23/9, 11 41/81)",
+          "mark_type": "A",
+          "marks": 1,
+          "accept_alternatives": ["(-2.556, 11.506)"]
+        }
+      ]
+    },
+    {
+      "question_number": 10,
+      "topic": "Integration",
+      "marks": 6,
+      "question_text": "Diagram 3 shows the curve y = f(x) and the straight line y = g(x). [Diagram: curve y=f(x) and line y=g(x) intersecting at origin O, point P(1,2) and point Q further along; shaded region A between curve and line from O to P]. The curve y = f(x) and the straight line y = g(x) intersect at points O, P and Q. Given the area of shaded region A is 1 5/12 unit^2.\n(a) Find the value of\n  (i) integral from 1 to 0 of f(x) dx,\n  (ii) k if integral from 0 to 1 of [3f(x) - k] dx = 12. [5 marks]\n(b) Given that the area of shaded region A is represented by [x^4/4 - 4x^3/3 + 5x^2/2] evaluated from 0 to 1. Find the equation of f(x). [1 mark]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a)(i) Reversing limits negates the integral: integral from 1 to 0 = -(integral from 0 to 1) = -1 5/12",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a)(ii) Separate the integral: integral from 0 to 1 of 3f(x) dx - integral from 0 to 1 of k dx = 12",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a)(ii) Integrate k term: 3 × integral from 0 to 1 of f(x) dx - [kx] from 0 to 1 = 12",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(a)(ii) Substitute known integral: 3(1 5/12) - k = 12",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(a)(ii) k = -31/4",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(b) Differentiate the area expression d/dx[x^4/4 - 4x^3/3 + 5x^2/2] to recover f(x): f(x) = x^3 - 4x^2 + 5x",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 11,
+      "topic": "Permutations and Combinations",
+      "marks": 7,
+      "question_text": "(a) A team of six students will be formed to participate in the state level STEM carnival. The team will be chosen from seven male students and five female students. Find the number of different ways to form the team if\n  (i) female students exceed male students, [2 marks]\n  (ii) at least four male students are selected. [2 marks]\n(b) Diagram 4 shows the route for an object. The object can only move up or to the right. [Diagram: L-shaped grid — a 4×2 lower segment joined to a 4×3 upper-right segment, from A at bottom-left to B at top-right]. Find the number of routes for the object to move from point A to B. [3 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a)(i) Female > male means 5F+1M or 4F+2M: 5C5 × 7C1 + 5C4 × 7C2",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a)(i) = 7 + 105 = 112",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a)(ii) At least 4 males: 4M2F + 5M1F + 6M0F: 7C4×5C2 + 7C5×5C1 + 7C6×5C0",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(a)(ii) = 350 + 105 + 7 = 462",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) Count routes for each section of the L-shaped path separately: 6!/(2!4!) or 7!/(3!4!)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(b) Multiply routes from both sections: 6!/(2!4!) × 7!/(3!4!) = 15 × 35",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 7,
+          "description": "(b) 525 routes",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 12,
+      "topic": "Probability Distributions",
+      "marks": 6,
+      "question_text": "(a) A participant has shot 3 times in a training session. Let H be the event of hitting the target and H' be the event of not hitting the target.\n  (i) Draw a tree diagram to show all possible outcomes.\n  (ii) If X represents the number of times the target is hit, show that X is a discrete random variable. [3 marks]\n(b) The random variable X of 12 trials is a binomial distribution with standard deviation sqrt(5/3). If p is the probability of success, find the possible values of p. [3 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a)(i) Draw complete tree: first branch H/H', each leads to second H/H', each leads to third H/H' — 3 levels, 8 endpoints",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a)(i) All 8 outcomes shown: HHH, HHH', HH'H, HH'H', H'HH, H'HH', H'H'H, H'H'H'",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a)(ii) X = {0, 1, 2, 3} — a finite countable set, therefore X is a discrete random variable",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(b) State q = 1 - p",
+          "mark_type": "B",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) Use variance = npq = (sd)^2: 12 × p × (1-p) = 5/3",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(b) p = 1/6 or p = 5/6",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 13,
+      "topic": "Indices and Logarithms",
+      "marks": 8,
+      "question_text": "[Section B — Answer any TWO of three questions]\n(a) Solve the simultaneous equations:\n  3^(4x) × (1/9)^(y-1) = 81\n  8^x / 2^y = 64 [4 marks]\n(b) Diagram 5 shows isosceles triangle ABC where BA = BC and M is the midpoint of AC. [Diagram: isosceles triangle with B at apex, A and C at base, M midpoint of AC. BM = 3+2sqrt(5), AC = 4+6sqrt(5)]. Given that BA = BC and M is the midpoint of AC. Find tan(angle BAC) in the form (a + b*sqrt(5))/c, where a, b and c are positive integers. [4 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a) Change to same base: rewrite (1/9)^(y-1) = 3^(-2(y-1)), 3^4 seen; or 8^x = 2^(3x), 2^6 = 64",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a) Apply index laws to equate exponents: 3^(4x-2y+2) = 3^4 and 2^(3x-y) = 2^6",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a) Form and solve simultaneous equations: 4x - 2y + 2 = 4 and 3x - y = 6",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(a) x = 5, y = 9",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) AM = AC/2 = (4+6sqrt(5))/2 = 2+3sqrt(5); tan(angle BAC) = BM/AM = (3+2sqrt(5))/(2+3sqrt(5))",
+          "mark_type": "B",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(b) Rationalize by multiplying by (2-3sqrt(5))/(2-3sqrt(5))",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 7,
+          "description": "(b) Expand numerator and denominator: (6 - 9sqrt(5) + 4sqrt(5) - 30) / (4 - 45)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 8,
+          "description": "(b) tan(angle BAC) = (24 + 5sqrt(5)) / 41",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 14,
+      "topic": "Trigonometric Functions",
+      "marks": 8,
+      "question_text": "[Section B — Answer any TWO of three questions]\nDiagram 6 shows a garden in the form of sector AOB of a circle with centre O. The radius and angle of the sector are R m and 2θ respectively. In the garden, a circular plot is to be planted with roses. The radius of the circular plot is r m. [Diagram: sector AOB with angle 2θ at O, outer radius R; inscribed circle with radius r touching both straight sides of the sector]\n(a) Show that R = r(1 + 1/sin θ). [2 marks]\n(b) Given that θ = 30°, find the ratio of the garden that is to be planted with roses. [3 marks]\n(c) Hence, calculate the length of fencing required to fence along the shaded region when R = 15. [3 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a) The circular plot is tangent to both radii; perpendicular distance from O to each radius = r/sin(θ) (this is the distance from O to centre of circle); R = r/sin(θ) + r",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a) R = r(1 + 1/sin θ) [shown]",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(b) When θ = 30°: R = r(1 + 2) = 3r; Area of sector AOB = (1/2)(3r)^2(π/3) = 3πr^2/2",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(b) Area of circular rose plot = πr^2; Ratio = πr^2 / (3πr^2/2)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) Ratio = 2/3",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(c) When R=15: r = R/3 = 5; arc length of rose circle = r × 2θ = 5 × (2π/3) = 10π/3; or tangent length = r/tan(30°) = 5sqrt(3)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 7,
+          "description": "(c) Total fencing = arc of circular plot + 2 tangent lengths from O to circle: 10π/3 + 2(5sqrt(3))",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 8,
+          "description": "(c) 27.79 m",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "question_number": 15,
+      "topic": "Trigonometric Functions",
+      "marks": 8,
+      "question_text": "[Section B — Answer any TWO of three questions]\n(a) Given cos 20° = h and sin 48° = g. Express sin 68° in terms of h and/or g. [3 marks]\n(b) Solve the equation 4cot^2(θ) - cosec^2(θ) = 2 for 0° <= θ <= 360°. [3 marks]\n(c) Given θ = 30°, show that cos(θ/2) = sqrt(2 + sqrt(3)) / 2. [2 marks]",
+      "skema_steps": [
+        {
+          "step_number": 1,
+          "description": "(a) Express sin 68° = sin(20° + 48°); draw right triangles: for cos 20°=h: sin 20° = sqrt(1-h^2); for sin 48°=g: cos 48° = sqrt(1-g^2)",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 2,
+          "description": "(a) Apply compound angle formula: sin(20°+48°) = sin20°·cos48° + cos20°·sin48° = sqrt(1-h^2)·sqrt(1-g^2) + h·g",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 3,
+          "description": "(a) sin 68° = sqrt((1-h^2)(1-g^2)) + gh",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 4,
+          "description": "(b) Use identity cosec^2(θ) = 1 + cot^2(θ): 4cot^2(θ) - (1 + cot^2(θ)) = 2 → 3cot^2(θ) = 3 → tan^2(θ) = 1",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 5,
+          "description": "(b) tan(θ) = ±1",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 6,
+          "description": "(b) θ = 45°, 135°, 225°, 315°",
+          "mark_type": "A",
+          "marks": 1
+        },
+        {
+          "step_number": 7,
+          "description": "(c) Use double angle formula cos(2α) = 2cos^2(α) - 1 with α = 15°: cos 30° = 2cos^2(15°) - 1; sqrt(3)/2 = 2cos^2(15°) - 1",
+          "mark_type": "M",
+          "marks": 1
+        },
+        {
+          "step_number": 8,
+          "description": "(c) cos^2(15°) = (2 + sqrt(3))/4; therefore cos(15°) = sqrt(2 + sqrt(3))/2 [shown]",
+          "mark_type": "A",
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

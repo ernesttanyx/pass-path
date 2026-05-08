@@ -1,0 +1,641 @@
+{
+  "kp_steps": [
+    {
+      "id": "20000001-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Nampak 'jumlah tidak melebihi / sekurang-kurangnya N' → tulis x + y ≤ N atau x + y ≥ N",
+      "step_description_en": "See 'total must not exceed / at least N' → write x + y ≤ N or x + y ≥ N",
+      "mark_value": 1,
+      "frequency_score": 10,
+      "difficulty_1_to_5": 2,
+      "display_order": 1,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "20000002-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Nampak 'x sekurang-kurangnya k kali y' → tulis pekali k dalam x ≥ ky",
+      "step_description_en": "See 'x must be at least k times y' → write the coefficient k in x ≥ ky",
+      "mark_value": 1,
+      "frequency_score": 9,
+      "difficulty_1_to_5": 3,
+      "display_order": 2,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "20000003-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Nampak harga/masa bagi setiap x dan y + had → RHS = had itu. Pekali = harga/masa seunit",
+      "step_description_en": "See cost/time per unit of x and y + a limit → RHS = the limit. Coefficients = cost/time per unit",
+      "mark_value": 1,
+      "frequency_score": 9,
+      "difficulty_1_to_5": 3,
+      "display_order": 3,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "20000004-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Cari pintasan-x: tetapkan y = 0, tekan RHS ÷ pekali-x",
+      "step_description_en": "Find x-intercept: set y = 0, press RHS ÷ x-coefficient",
+      "mark_value": 1,
+      "frequency_score": 8,
+      "difficulty_1_to_5": 2,
+      "display_order": 4,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "20000005-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Cari pintasan-y: tetapkan x = 0, tekan RHS ÷ pekali-y",
+      "step_description_en": "Find y-intercept: set x = 0, press RHS ÷ y-coefficient",
+      "mark_value": 1,
+      "frequency_score": 8,
+      "difficulty_1_to_5": 2,
+      "display_order": 5,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "20000006-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Cari koordinat-x titik persilangan: tolak satu persamaan dari yang lain untuk hapuskan y, selesaikan x",
+      "step_description_en": "Find x-coordinate of intersection: subtract one equation from the other to eliminate y, solve for x",
+      "mark_value": 1,
+      "frequency_score": 10,
+      "difficulty_1_to_5": 4,
+      "display_order": 6,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "20000007-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Cari koordinat-y: gantikan nilai x yang dah dapat ke dalam mana-mana persamaan, selesaikan y",
+      "step_description_en": "Find y-coordinate: substitute the x value you already found into either equation, solve for y",
+      "mark_value": 1,
+      "frequency_score": 10,
+      "difficulty_1_to_5": 4,
+      "display_order": 7,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "20000008-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Nampak k = ax + by dan satu titik (x, y) → tekan a×x + b×y pada kalkulator",
+      "step_description_en": "See k = ax + by and one point (x, y) → press a×x + b×y on calculator",
+      "mark_value": 1,
+      "frequency_score": 10,
+      "difficulty_1_to_5": 2,
+      "display_order": 8,
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "20000009-0000-0000-0000-000000000000",
+      "topic": "Linear Programming",
+      "step_description_bm": "Kira k di SEMUA bucu, pilih yang paling besar (max) atau paling kecil (min)",
+      "step_description_en": "Calculate k at ALL vertices, pick the largest (max) or smallest (min)",
+      "mark_value": 1,
+      "frequency_score": 10,
+      "difficulty_1_to_5": 2,
+      "display_order": 9,
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  ],
+
+  "step_variants": [
+
+    {
+      "id": "40010001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000001-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Sebuah kedai menjual x unit Produk A dan y unit Produk B sehari. Jumlah unit yang dijual tidak melebihi 80 unit sehari.\n\nDiberi x + y ≤ ___, isi tempat kosong.",
+      "prompt_en": "A shop sells x units of Product A and y units of Product B per day. The total units sold must not exceed 80 per day.\n\nGiven x + y ≤ ___, fill in the blank.",
+      "correct_answer_json": {
+        "expression": "80",
+        "tolerance": 0
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "8",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat1_misread_number"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40010002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000001-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Seorang pengusaha membuat x biji kek coklat dan y biji kek vanila. Bilangan kek yang dihasilkan sekurang-kurangnya 20 biji.\n\nDiberi x + y ≥ ___, isi tempat kosong.",
+      "prompt_en": "A baker makes x chocolate cakes and y vanilla cakes. The total number of cakes produced must be at least 20.\n\nGiven x + y ≥ ___, fill in the blank.",
+      "correct_answer_json": {
+        "expression": "20",
+        "tolerance": 0
+      },
+      "common_wrongs_json": [],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40010003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000001-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Sebuah kilang menghasilkan x unit Jenis P dan y unit Jenis Q. Jumlah keluaran tidak melebihi 120 unit.\n\nDiberi x + y ≤ ___, isi tempat kosong.",
+      "prompt_en": "A factory produces x units of Type P and y units of Type Q. Total output must not exceed 120 units.\n\nGiven x + y ≤ ___, fill in the blank.",
+      "correct_answer_json": {
+        "expression": "120",
+        "tolerance": 0
+      },
+      "common_wrongs_json": [],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "40020001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000002-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Bilangan unit Produk A (x) mestilah sekurang-kurangnya 3 kali bilangan unit Produk B (y).\n\nDiberi x ≥ ___ y, isi pekali.",
+      "prompt_en": "The number of Product A units (x) must be at least 3 times the number of Product B units (y).\n\nGiven x ≥ ___ y, fill in the coefficient.",
+      "correct_answer_json": {
+        "expression": "3",
+        "tolerance": 0
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "1/3",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat2_inverted_ratio"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40020002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000002-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Bilangan kek coklat (x) tidak melebihi dua kali bilangan kek vanila (y).\n\nDiberi x ≤ ___ y, isi pekali.",
+      "prompt_en": "The number of chocolate cakes (x) must not exceed twice the number of vanilla cakes (y).\n\nGiven x ≤ ___ y, fill in the coefficient.",
+      "correct_answer_json": {
+        "expression": "2",
+        "tolerance": 0
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "1/2",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat2_inverted_ratio"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40020003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000002-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Bilangan unit Jenis Q (y) mestilah lebih daripada separuh bilangan unit Jenis P (x).\n\nDiberi y > ___ x, isi pekali.",
+      "prompt_en": "The number of Type Q units (y) must be more than half the number of Type P units (x).\n\nGiven y > ___ x, fill in the coefficient.",
+      "correct_answer_json": {
+        "expression": "1/2",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "2",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat2_inverted_ratio"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "40030001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000003-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Setiap unit Produk A (x) berharga RM40 dan setiap unit Produk B (y) berharga RM60. Jumlah kos pengeluaran tidak melebihi RM2 400.\n\nDiberi 40x + 60y ≤ ___, isi tempat kosong.",
+      "prompt_en": "Each unit of Product A (x) costs RM40 and each unit of Product B (y) costs RM60 to produce. Total production cost must not exceed RM2 400.\n\nGiven 40x + 60y ≤ ___, fill in the blank.",
+      "correct_answer_json": {
+        "expression": "2400",
+        "tolerance": 0
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "240",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat3_misread_budget"
+        },
+        {
+          "expression": "100",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat3_added_coefficients_as_budget"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40030002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000003-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Setiap kek coklat (x) mengambil masa 3 jam dan setiap kek vanila (y) mengambil masa 2 jam untuk dibakar. Masa yang tersedia ialah 36 jam seminggu.\n\nDiberi 3x + 2y ≤ ___, isi tempat kosong.",
+      "prompt_en": "Each chocolate cake (x) takes 3 hours and each vanilla cake (y) takes 2 hours to bake. Time available is 36 hours per week.\n\nGiven 3x + 2y ≤ ___, fill in the blank.",
+      "correct_answer_json": {
+        "expression": "36",
+        "tolerance": 0
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "5",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat3_added_coefficients_as_budget"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40030003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000003-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Kos bahan untuk setiap unit Jenis P (x) ialah RM5 dan setiap unit Jenis Q (y) ialah RM8. Peruntukan belanjawan tidak melebihi RM400.\n\nDiberi 5x + 8y ≤ ___, isi tempat kosong.",
+      "prompt_en": "Material cost per unit of Type P (x) is RM5 and Type Q (y) is RM8. Budget allocation must not exceed RM400.\n\nGiven 5x + 8y ≤ ___, fill in the blank.",
+      "correct_answer_json": {
+        "expression": "400",
+        "tolerance": 0
+      },
+      "common_wrongs_json": [],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "40040001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000004-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Satu daripada kekangan ialah 2x + 3y = 12. Untuk melukis garis ini, cari dua titik.\n\nApabila y = 0: x = ___",
+      "prompt_en": "One of the constraints is 2x + 3y = 12. To draw this line, find two points.\n\nWhen y = 0: x = ___",
+      "correct_answer_json": {
+        "expression": "12/2",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "12/3",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat4_used_y_coefficient"
+        },
+        {
+          "expression": "12",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat4_forgot_to_divide"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40040002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000004-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Satu kekangan ialah 4x + 5y = 40.\n\nApabila y = 0: x = ___",
+      "prompt_en": "One constraint is 4x + 5y = 40.\n\nWhen y = 0: x = ___",
+      "correct_answer_json": {
+        "expression": "40/4",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "40/5",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat4_used_y_coefficient"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40040003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000004-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Garis sempadan bagi satu kekangan ialah 5x + 2y = 30.\n\nApabila y = 0: x = ___",
+      "prompt_en": "The boundary line for one constraint is 5x + 2y = 30.\n\nWhen y = 0: x = ___",
+      "correct_answer_json": {
+        "expression": "30/5",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "30/2",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat4_used_y_coefficient"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "40050001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000005-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Satu daripada kekangan ialah 2x + 3y = 12. Untuk melukis garis ini, cari dua titik.\n\nApabila x = 0: y = ___",
+      "prompt_en": "One of the constraints is 2x + 3y = 12. To draw this line, find two points.\n\nWhen x = 0: y = ___",
+      "correct_answer_json": {
+        "expression": "12/3",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "12/2",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat5_used_x_coefficient"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40050002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000005-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Satu kekangan ialah 4x + 5y = 40.\n\nApabila x = 0: y = ___",
+      "prompt_en": "One constraint is 4x + 5y = 40.\n\nWhen x = 0: y = ___",
+      "correct_answer_json": {
+        "expression": "40/5",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "40/4",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat5_used_x_coefficient"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40050003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000005-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Garis sempadan bagi satu kekangan ialah 5x + 2y = 30.\n\nApabila x = 0: y = ___",
+      "prompt_en": "The boundary line for one constraint is 5x + 2y = 30.\n\nWhen x = 0: y = ___",
+      "correct_answer_json": {
+        "expression": "30/2",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "30/5",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat5_used_x_coefficient"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "40060001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000006-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Dua garis sempadan bersilang ialah:\n  x + y = 10  … (1)\n  2x + y = 15 … (2)\n\nTolak (1) dari (2) untuk hapuskan y. Cari nilai x.",
+      "prompt_en": "Two boundary lines intersect:\n  x + y = 10  … (1)\n  2x + y = 15 … (2)\n\nSubtract (1) from (2) to eliminate y. Find the value of x.",
+      "correct_answer_json": {
+        "expression": "15-10",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "15+10",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat6_added_instead_of_subtracted"
+        },
+        {
+          "expression": "10",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat6_copied_rhs_directly"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40060002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000006-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Dua garis sempadan bersilang ialah:\n  2x + y = 16 … (1)\n  x + y = 10  … (2)\n\nTolak (2) dari (1) untuk hapuskan y. Cari nilai x.",
+      "prompt_en": "Two boundary lines intersect:\n  2x + y = 16 … (1)\n  x + y = 10  … (2)\n\nSubtract (2) from (1) to eliminate y. Find the value of x.",
+      "correct_answer_json": {
+        "expression": "16-10",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "16+10",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat6_added_instead_of_subtracted"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40060003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000006-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Dua garis sempadan bersilang ialah:\n  3x + y = 21 … (1)\n  x + y = 9   … (2)\n\nTolak (2) dari (1) untuk hapuskan y. Cari nilai x.",
+      "prompt_en": "Two boundary lines intersect:\n  3x + y = 21 … (1)\n  x + y = 9   … (2)\n\nSubtract (2) from (1) to eliminate y. Find the value of x.",
+      "correct_answer_json": {
+        "expression": "(21-9)/2",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "21-9",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat6_forgot_divide_by_x_coefficient"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "40070001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000007-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Titik persilangan dua garis x + y = 10 dan 2x + y = 15 ialah pada x = 5.\n\nGantikan x = 5 ke dalam persamaan (1): 5 + y = 10. Cari y.",
+      "prompt_en": "The intersection of x + y = 10 and 2x + y = 15 is at x = 5.\n\nSubstitute x = 5 into equation (1): 5 + y = 10. Find y.",
+      "correct_answer_json": {
+        "expression": "10-5",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "15-5",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat7_substituted_wrong_equation"
+        },
+        {
+          "expression": "10+5",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat7_added_instead_of_subtracted"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40070002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000007-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Titik persilangan dua garis 2x + y = 16 dan x + y = 10 ialah pada x = 6.\n\nGantikan x = 6 ke dalam persamaan (2): 6 + y = 10. Cari y.",
+      "prompt_en": "The intersection of 2x + y = 16 and x + y = 10 is at x = 6.\n\nSubstitute x = 6 into equation (2): 6 + y = 10. Find y.",
+      "correct_answer_json": {
+        "expression": "10-6",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "16-6*2",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat7_substituted_wrong_equation"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40070003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000007-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Titik persilangan dua garis 3x + y = 21 dan x + y = 9 ialah pada x = 6.\n\nGantikan x = 6 ke dalam persamaan (2): 6 + y = 9. Cari y.",
+      "prompt_en": "The intersection of 3x + y = 21 and x + y = 9 is at x = 6.\n\nSubstitute x = 6 into equation (2): 6 + y = 9. Find y.",
+      "correct_answer_json": {
+        "expression": "9-6",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "21-6*3",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat7_substituted_wrong_equation"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "40080001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000008-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Fungsi objektif ialah k = 3x + 2y.\n\nKirakan nilai k pada titik (4, 3).",
+      "prompt_en": "The objective function is k = 3x + 2y.\n\nCalculate the value of k at the point (4, 3).",
+      "correct_answer_json": {
+        "expression": "3*4+2*3",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "3+4+2+3",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat8_added_all_numbers"
+        },
+        {
+          "expression": "3*3+2*4",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat8_swapped_x_and_y"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40080002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000008-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Fungsi objektif ialah k = 5x + 4y.\n\nKirakan nilai k pada titik (6, 2).",
+      "prompt_en": "The objective function is k = 5x + 4y.\n\nCalculate the value of k at the point (6, 2).",
+      "correct_answer_json": {
+        "expression": "5*6+4*2",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "5*2+4*6",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat8_swapped_x_and_y"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40080003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000008-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Fungsi objektif ialah k = 2x + 7y.\n\nKirakan nilai k pada titik (3, 5).",
+      "prompt_en": "The objective function is k = 2x + 7y.\n\nCalculate the value of k at the point (3, 5).",
+      "correct_answer_json": {
+        "expression": "2*3+7*5",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "2*5+7*3",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat8_swapped_x_and_y"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+
+    {
+      "id": "40090001-0000-0000-0000-000000000000",
+      "kp_step_id": "20000009-0000-0000-0000-000000000000",
+      "display_order": 1,
+      "prompt_bm": "Fungsi objektif ialah k = 5x + 3y. Bucu-bucu rantau yang layak ialah (2, 4), (6, 1) dan (3, 5).\n\nKira k di setiap bucu, kemudian nyatakan nilai MAKSIMUM k.",
+      "prompt_en": "The objective function is k = 5x + 3y. The vertices of the feasible region are (2, 4), (6, 1) and (3, 5).\n\nCalculate k at each vertex, then state the MAXIMUM value of k.",
+      "correct_answer_json": {
+        "expression": "max(5*2+3*4, 5*6+3*1, 5*3+3*5)",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "5*2+3*4",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat9_only_checked_first_vertex"
+        },
+        {
+          "expression": "5*3+3*5",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat9_only_checked_one_vertex"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40090002-0000-0000-0000-000000000000",
+      "kp_step_id": "20000009-0000-0000-0000-000000000000",
+      "display_order": 2,
+      "prompt_bm": "Fungsi objektif ialah k = 2x + 5y. Bucu-bucu ialah (3, 2), (5, 1) dan (1, 4).\n\nKira k di setiap bucu, kemudian nyatakan nilai MINIMUM k.",
+      "prompt_en": "The objective function is k = 2x + 5y. The vertices are (3, 2), (5, 1) and (1, 4).\n\nCalculate k at each vertex, then state the MINIMUM value of k.",
+      "correct_answer_json": {
+        "expression": "min(2*3+5*2, 2*5+5*1, 2*1+5*4)",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "2*1+5*4",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat9_picked_largest_not_smallest"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "40090003-0000-0000-0000-000000000000",
+      "kp_step_id": "20000009-0000-0000-0000-000000000000",
+      "display_order": 3,
+      "prompt_bm": "Fungsi objektif ialah k = 4x + 3y. Bucu-bucu ialah (0, 8), (5, 4) dan (9, 0).\n\nKira k di setiap bucu, kemudian nyatakan nilai MAKSIMUM k.",
+      "prompt_en": "The objective function is k = 4x + 3y. The vertices are (0, 8), (5, 4) and (9, 0).\n\nCalculate k at each vertex, then state the MAXIMUM value of k.",
+      "correct_answer_json": {
+        "expression": "max(4*0+3*8, 4*5+3*4, 4*9+3*0)",
+        "tolerance": 0.01
+      },
+      "common_wrongs_json": [
+        {
+          "expression": "4*0+3*8",
+          "marks_awarded": 0,
+          "hint_key": "lp_pat9_only_checked_first_vertex"
+        }
+      ],
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+
+  ]
+}
